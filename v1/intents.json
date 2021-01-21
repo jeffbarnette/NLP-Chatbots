@@ -1,0 +1,126 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": [
+                "hi", "hello", "howdy", "greetings", "g'day", "what's up?",
+                "sup?", "hey", "how's it going?", "yo", "hiya", "ahoy"
+            ],
+            "responses": [
+                "Hello!", "Hi there!", "Hello and good <time_of_day>!"
+            ]
+        },
+        {
+            "tag": "greetings_alt",
+            "patterns": [
+                "good morning", "good afternoon", "good evening"
+            ],
+            "responses": [
+                "Good <time_of_day>!", "Hello and good <time_of_day> to you!"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "bye", "goodbye", "sayonara", "farewell", "ciao", "adios",
+                "bye-bye", "so long", "see you", "talk to", "later", "adieu",
+                "au revior", "cheers", "cheerio", "ta-ta", "take care", "ttyl",
+                "I have to go now", "I am done talking", "I gotta go", "cya"
+            ],
+            "responses": [
+                "Ok. It was good talking to you. Goodbye!", "Goodbye!",
+                "Great talking to you. Goodbye!", "Bye for now!",
+                "Talk to you later! Bye for now!"
+            ]
+        },
+        {
+            "tag": "goodbye_alt",
+            "patterns": [
+                "have a good", "evening", "night", "day", "rest of your",
+                "one", "week", "sleep", "rest", "afternoon", "morning"
+            ],
+            "responses": [
+                "Thank! You too! Goodbye!", "You too! Goodbye!",
+                "Thanks! You do the same. Bye for now!",
+                "Thank you! You as well! Goodbye!",
+                "Will do. Thanks! Goodbye!",
+                "Have a good <time_of_day>! Bye for now!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "thank you", "thanks", "much appreciated", "very much",
+                "alot", "many thanks", "so much"
+            ],
+            "responses": [
+                "You're welcome!", "You are welcome!", "Sure no problem!",
+                "Just doing my job!", "You bet!", "My pleasure!", ":)"
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "what is your name?", "what's your name?", "who are you?",
+                "what should I call you?", "do you have a name?",
+                "who is this?", "may I ask your name?", "am I speaking with?",
+                "I'm speaking to?", "can you tell me"
+            ],
+            "responses": [
+                "My name is <bot_name>. What's yours?",
+                "You can call me <bot_name>. What is your name?",
+                "Most people call me <bot_name>. What's your name?",
+                "I'm <bot_name>! What is your name?"
+            ],
+            "context_set": "what_name"
+        },
+        {
+            "tag": "name_response",
+            "patterns": ["my name is", "call me", "you can call me"],
+            "responses": [
+                "Nice to meet you <user_name>!",
+                "It's nice to meet you <user_name>!",
+                "Ok <user_name>! It is nice to be able to chat with you.",
+                "Thanks <user_name>! I am glad we get a chance to chat."
+            ],
+            "context_filter": "what_name"
+        },
+        {
+            "tag": "myname",
+            "patterns": [
+                "do you know my name?", "what is my name?",
+                "do you know how I am?", "who am I?", "what's my name?",
+                "tell me who I am", "do you remember me?"
+            ],
+            "responses": [
+                "You told me your name was <user_name>.",
+                "You are <user_name>!", "Your name is <user_name>!",
+                "I thought I was speaking to <user_name>.",
+                "I remember you <user_name>.", "It is <user_name>!",
+                "It's <user_name> right?"
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                "what time is it?", "do you know what time it is?",
+                "can you tell me the time", "what is the time?",
+                "I need to know the time"
+            ],
+            "responses": [
+                "It is <current_time>.", "The time is <current_time>.",
+                "It is now <current_time>.", "<current_time>"
+            ]
+        },
+        {
+            "tag": "yesno",
+            "patterns": [
+                "yes", "no", "yeah", "nah", "yup", "nope", "no way",
+                "that's right", "that's wrong", "that is correct",
+                "that is incorrect", "correct", "incorrect", "right",
+                "wrong", "you are right", "you are wrong"
+            ],
+            "responses": ["Ok", "Understood", "I understand.", "Got it."]
+        }
+    ]
+}
