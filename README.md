@@ -52,7 +52,7 @@ To obtain and provide the chatbot with cleaner source text which may also give y
 
 To do this, wait for the prompt and then open **raw_data.txt** in a text editor and make any changes you want, then save the changes. You should end up with one sentence per line with no empty lines in between.
 
-Next, return to the command line and press ENTER (or RETURN om Mac) key to continue the process which saves the resulting sentence list into a binary (*.pkl) file for use with the chatbot.
+Next, return to the command line and press ENTER (or RETURN on Mac) to continue the process which saves the resulting sentence list into a binary (*.pkl) file for use with the chatbot.
 
 `python3 v2/scrape.py`
 
